@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/configuracoes" android:title="@string/configura_es"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item android:id="@+id/sair" android:title="@string/action_sair"
+        android:orderInCategory="200" app:showAsAction="never"/>
+
+    <item android:id="@+id/pesquisa" android:title="Pesquisar"
+        android:orderInCategory="300" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search"/>
+    <item android:id="@+id/fotoM" android:title="Foto" android:orderInCategory="400"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add_a_photo"/>
+    <item android:id="@+id/novo" android:title="Novo" app:showAsAction="never"/>
+
+</menu>

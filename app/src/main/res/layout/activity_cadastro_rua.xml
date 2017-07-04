@@ -6,8 +6,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundo_degrade"
     android:gravity="center_vertical|center_horizontal"
-    tools:context="com.example.sandro.alertablumenau.LoginActivity">
+    tools:context="com.example.sandro.alertablumenau.CadastroRuaActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="160dp"
@@ -25,8 +28,8 @@
             android:layout_margin="16dp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            android:hint="@string/digite_seu_email_login"
-            android:id="@+id/edit_login_email"
+            android:hint="@string/digite_o_nome_da_rua"
+            android:id="@+id/edit_cad_rua"
             android:layout_below="@+id/imageView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -39,40 +42,28 @@
             android:padding="16dp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            android:hint="Digite sua senha"
-            android:inputType="textPassword"
+            android:hint="@string/digite_uma_descricao"
             android:layout_margin="16dp"
             android:ems="10"
-            android:id="@+id/edit_login_senha"
-            android:layout_below="@+id/edit_login_email"
+            android:id="@+id/edit_cad_desc"
+            android:layout_below="@+id/edit_cad_rua"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp" />
+
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/fundo_botao"
-            android:text="@string/botao_logar"
-            android:id="@+id/button_logar"
-            android:layout_below="@+id/edit_login_senha"
+            android:text="@string/cadastrar"
+            android:id="@+id/button_cad"
+            android:layout_below="@+id/edit_cad_desc"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="23dp"
-            android:layout_margin="16dp"
-            android:theme="@style/botao"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/crie_conta"
-            android:id="@+id/textView"
-            android:layout_below="@+id/button_logar"
-            android:layout_centerHorizontal="true"
-            android:onClick="abrirCadastroUser" />
+            android:layout_margin="16dp"/>
 
 
-
+    </RelativeLayout>
 </RelativeLayout>
-

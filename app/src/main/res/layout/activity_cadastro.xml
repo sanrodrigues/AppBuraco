@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo_degrade"
-    android:gravity="center_vertical|center_horizontal">
+    android:gravity="center_vertical|center_horizontal"
+    tools:context="com.example.sandro.alertablumenau.CadastroActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,4 +85,3 @@
 
 
 </RelativeLayout>
-
